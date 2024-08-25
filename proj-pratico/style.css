@@ -1,10 +1,10 @@
-* {
+* { /* Normalização de conteúdo base */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
   
-  :root {
+  :root { /* Varíaveis para reutilização no código */
     --bg-color: #212529;
     --border-color: #666;
     --font-color: #f1f5f9;
@@ -30,7 +30,7 @@
     padding: 2rem 0;
   }
   
-  #themeSwitcher {
+  #themeSwitcher { /* Botão de troca de tema */
     background-color: var(--bg-color);
     border: .125rem solid var(--font-color);
     color: var(--font-color);
@@ -63,9 +63,9 @@
     width: 100%;
   }
   
-  #keys {
+  #keys { /* Div que conterá botões da cálculadora */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Assim fará com que terão linhas com 4 botões */
     gap: 1rem;
     margin: 2rem 0;
   }
@@ -81,12 +81,12 @@
     filter: brightness(0.8);
   }
   
-  #result {
+  #result { /* Resultado de operações */
     border-width: 2px 2px 2px 0;
     border-radius: 0 .5rem .5rem 0;
   }
   
-  #copyToClipboard {
+  #copyToClipboard { /* Cópia para área de transferência */
     background-color: transparent;
     border: solid var(--border-color);
     border-width: 2px;
@@ -98,6 +98,7 @@
     width: 6rem;
   }
   
+  /* Classes auxiliáres para o código html */
   .flex {
     display: flex;
   }
