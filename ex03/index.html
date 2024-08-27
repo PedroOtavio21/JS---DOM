@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe!</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="container" meta-theme="white">
+        <div class="container-left">
+            <button id="switch-btn" class="switch-btn" data-theme="light">Trocar Tema</button>
+            <h1>TIC TAC TOE!</h1>
+            <div class="players">
+                <input type="text" id="player1" placeholder="Nome do jogador (X)">
+                <input type="text" id="player2" placeholder="Nome de jogador (O)">
+            </div>
+            <button id="start">Começar!</button>
+        </div>
+        <div class="container-right">
+            <h2>Vez de: <span id="turn-player"></span></h2>
+            <div class="game-board">
+                <div class="region" data-region="0.0"></div>
+                <div class="region" data-region="0.1"></div>
+                <div class="region" data-region="0.2"></div>
+                <div class="region" data-region="1.0"></div>
+                <div class="region" data-region="1.1"></div>
+                <div class="region" data-region="1.2"></div>
+                <div class="region" data-region="2.0"></div>
+                <div class="region" data-region="2.1"></div>
+                <div class="region" data-region="2.2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
